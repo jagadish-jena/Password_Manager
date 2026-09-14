@@ -30,7 +30,7 @@ const Manager = () => {
     try {
       const token = await getToken();
 
-      const req = await fetch(`${API_URL}/api/passwords`, {
+      const req = await fetch(`${API_URL}/passwords`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -91,7 +91,7 @@ const Manager = () => {
         
         if (form.id) {
           const deleteResponse = await fetch(
-            `${API_URL}/api/passwords/${form.id}`,
+            `${API_URL}/passwords/${form.id}`,
             {
               method: "DELETE",
               headers: {
@@ -114,7 +114,7 @@ const Manager = () => {
         };
 
         const response = await fetch(
-          `${API_URL}/api/passwords`,
+          `${API_URL}/passwords`,
           {
             method: "POST",
             headers: {
@@ -224,7 +224,7 @@ const Manager = () => {
       const token = await getToken();
 
       const response = await fetch(
-        `${API_URL}/api/passwords/${id}`,
+        `${API_URL}/passwords/${id}`,
         {
           method: "DELETE",
           headers: {
