@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #dcfce7;
+  background-image:
+    linear-gradient(to right, #8080800a 1px, transparent 1px),
+    linear-gradient(to bottom, #8080800a 1px, transparent 1px);
+  background-size: 14px 24px;
+}
+.manager-background {
+  background-color: #dcfce7;
+  background-image:
+    linear-gradient(to right, #8080800a 1px, transparent 1px),
+    linear-gradient(to bottom, #8080800a 1px, transparent 1px);
+  background-size: 14px 24px;
+}
+
+@layer components {
+  .mycontainer {
+    @apply container px-40 mx-auto;
+  }
+}
