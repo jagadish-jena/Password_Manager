@@ -2,6 +2,10 @@
 
 PassOP is a full-stack password manager built with React and Express. Users can sign in securely, store credentials for their websites, and manage saved entries from a single dashboard.
 
+## Live Demo
+
+[Open PassOP](https://password-manager-one-liart.vercel.app/)
+
 ## Features
 
 - Clerk-powered sign-up, sign-in, and sign-out
